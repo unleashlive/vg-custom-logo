@@ -1,0 +1,4 @@
+/**
+ * @license vg-custom-logo
+ * MIT license
+ */

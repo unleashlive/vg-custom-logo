@@ -1,6 +1,7 @@
 import {Component, ElementRef, Input, ViewEncapsulation, NgModule} from '@angular/core';
 import {VgAPI} from "videogular2/core";
 
+
 @Component({
   selector: 'vg-custom-logo',
   encapsulation: ViewEncapsulation.None,
@@ -48,8 +49,3 @@ export class VgCustomLogo implements OnInit {
 
 }
 
-@NgModule({
-  declarations: [VgCustomLogo],
-  exports: [VgCustomLogo]
-})
-export class VgCustomLogoModule {}
