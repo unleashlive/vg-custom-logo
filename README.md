@@ -9,16 +9,17 @@ Include a custom logo overlay when vg-player is not playing
 `import {VgCustomLogoModule} from "vg-custom-logo";`
    
 
-   imports: [
-     ...,
-     VgCustomLogoModule,
-     ...,
-   ],
+```imports: [
+ ...,
+ VgCustomLogoModule,
+ ...,
+],```
 
 # Add to player
-<vg-player>
+
+```<vg-player>
   ...
   <vg-custom-logo src="assets/img/logo.svg"></vg-custom-logo>
   ...
-</vg-player>
+</vg-player>```
 
