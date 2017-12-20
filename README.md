@@ -27,3 +27,4 @@ imports: [
 </vg-player>
 ```
 
+![Sample Logo Result](https://i.imgur.com/nowKAEb.png)
