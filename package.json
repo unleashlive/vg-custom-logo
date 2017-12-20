@@ -1,0 +1,25 @@
+{
+  "name": "vg-custom-logo",
+  "version": "1.0.0",
+  "description": "Include a custom logo overlay when vg-player is not playing",
+  "main": "vg-custom-logo.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unleashlive/vg-custom-logo.git"
+  },
+  "keywords": [
+    "videogular2",
+    "angular2",
+    "videogular",
+    "angular"
+  ],
+  "author": "unleash",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/unleashlive/vg-custom-logo/issues"
+  },
+  "homepage": "https://github.com/unleashlive/vg-custom-logo#readme"
+}
