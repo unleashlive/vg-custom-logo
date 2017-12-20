@@ -1,10 +1,10 @@
 import {Component, OnInit, ElementRef, Input, ViewEncapsulation, NgModule} from '@angular/core';
+import { CommonModule } from "@angular/common";
 import {VgCoreModule, VgAPI} from "videogular2/core";
 import {FormsModule} from '@angular/forms';
 
 @Component({
   selector: 'vg-custom-logo',
-  encapsulation: ViewEncapsulation.None,
   template: `
     <div class="logo-layer" *ngIf="API.state != 'playing'">
       <img [src]="src" />
@@ -50,7 +50,7 @@ export class VgCustomLogo implements OnInit {
 }
 
 @NgModule({
-  imports: [VgCoreModule, FormsModule],
+  imports: [VgCoreModule, FormsModule, CommonModule],
   declarations: [VgCustomLogo],
   exports: [VgCustomLogo]
 })

@@ -3,7 +3,8 @@
  * MIT license
  */
 
-import { Component, ElementRef, Input, NgModule, ViewEncapsulation } from '@angular/core';
+import { Component, ElementRef, Input, NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { VgAPI, VgCoreModule } from 'videogular2/core';
 import { FormsModule } from '@angular/forms';
 
@@ -41,7 +42,6 @@ class VgCustomLogo {
 VgCustomLogo.decorators = [
     { type: Component, args: [{
                 selector: 'vg-custom-logo',
-                encapsulation: ViewEncapsulation.None,
                 template: `
     <div class="logo-layer" *ngIf="API.state != 'playing'">
       <img [src]="src" />
@@ -74,7 +74,7 @@ class VgCustomLogoModule {
 }
 VgCustomLogoModule.decorators = [
     { type: NgModule, args: [{
-                imports: [VgCoreModule, FormsModule],
+                imports: [VgCoreModule, FormsModule, CommonModule],
                 declarations: [VgCustomLogo],
                 exports: [VgCustomLogo]
             },] },

@@ -1,8 +1,8 @@
 (function (global, factory) {
-	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('videogular2/core'), require('@angular/forms')) :
-	typeof define === 'function' && define.amd ? define(['exports', '@angular/core', 'videogular2/core', '@angular/forms'], factory) :
-	(factory((global.ng = global.ng || {}, global.ng.angularLibraryStarter = {}),global.ng.core,global['videogular2/core'],global['@angular/forms']));
-}(this, (function (exports,core,core$1,forms) { 'use strict';
+	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/common'), require('videogular2/core'), require('@angular/forms')) :
+	typeof define === 'function' && define.amd ? define(['exports', '@angular/core', '@angular/common', 'videogular2/core', '@angular/forms'], factory) :
+	(factory((global.ng = global.ng || {}, global.ng.angularLibraryStarter = {}),global.ng.core,global.ng.common,global['videogular2/core'],global['@angular/forms']));
+}(this, (function (exports,core,common,core$1,forms) { 'use strict';
 
 /**
  * @license vg-custom-logo
@@ -45,7 +45,6 @@ var VgCustomLogo = (function () {
     VgCustomLogo.decorators = [
         { type: core.Component, args: [{
                     selector: 'vg-custom-logo',
-                    encapsulation: core.ViewEncapsulation.None,
                     template: "\n    <div class=\"logo-layer\" *ngIf=\"API.state != 'playing'\">\n      <img [src]=\"src\" />\n    </div>\n  ",
                     styles: ["\n    .logo-layer {\n      position: absolute;\n      display: block;\n      top: 0;\n    }\n    img {\n      width: 150px;\n      margin-left: 20px;\n      margin-top: 20px;\n    }\n  "]
                 },] },
@@ -66,7 +65,7 @@ var VgCustomLogoModule = (function () {
     }
     VgCustomLogoModule.decorators = [
         { type: core.NgModule, args: [{
-                    imports: [core$1.VgCoreModule, forms.FormsModule],
+                    imports: [core$1.VgCoreModule, forms.FormsModule, common.CommonModule],
                     declarations: [VgCustomLogo],
                     exports: [VgCustomLogo]
                 },] },
