@@ -19,6 +19,7 @@ import sourcemaps from 'rollup-plugin-sourcemaps';
  */
 const globals = {
     '@angular/core': 'ng.core',
+    '@angular/forms': '@angular/forms',
     '@angular/common': 'ng.common',
     'rxjs/Observable': 'Rx',
     'rxjs/Observer': 'Rx',
