@@ -1,5 +1,6 @@
 import {Component, OnInit, ElementRef, Input, ViewEncapsulation, NgModule} from '@angular/core';
 import {VgCoreModule, VgAPI} from "videogular2/core";
+import {FormsModule} from '@angular/forms';
 
 @Component({
   selector: 'vg-custom-logo',
@@ -49,7 +50,7 @@ export class VgCustomLogo implements OnInit {
 }
 
 @NgModule({
-  imports: [VgCoreModule],
+  imports: [VgCoreModule, FormsModule],
   declarations: [VgCustomLogo],
   exports: [VgCustomLogo]
 })
