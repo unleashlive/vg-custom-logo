@@ -28,3 +28,4 @@ imports: [
 ```
 
 ![Sample Logo Result](https://i.imgur.com/nowKAEb.png)
+![Now when playing](https://i.imgur.com/VpoeVmg.png)
