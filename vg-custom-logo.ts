@@ -1,4 +1,4 @@
-import {Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewEncapsulation} from '@angular/core';
+import {Component, ElementRef, Input, ViewEncapsulation, NgModule} from '@angular/core';
 import {VgAPI} from "videogular2/core";
 
 @Component({
@@ -47,3 +47,9 @@ export class VgCustomLogo implements OnInit {
   }
 
 }
+
+@NgModule({
+  declarations: [VgCustomLogo],
+  exports: [VgCustomLogo]
+})
+export class VgCustomLogoModule {}
