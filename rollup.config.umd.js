@@ -1,4 +1,5 @@
 import resolve from 'rollup-plugin-node-resolve';
+import replace from 'rollup-plugin-replace';
 import commonjs from 'rollup-plugin-commonjs';
 import angular from 'rollup-plugin-angular';
 import typescript from 'rollup-plugin-typescript';
@@ -14,6 +15,10 @@ export default {
         '@angular/core',
     ],
     plugins: [
+    replace({"import { VgAPI } from": "var VgAPI = require(" }),
+    replace({"vg-api": "vg-api');//"}),
+    replace({"import { VgCoreModule } from": "var VgCoreModule = require(" }),
+    replace({"core/core": "core/core');//"}),
     angular(
         {
             preprocessors:{
