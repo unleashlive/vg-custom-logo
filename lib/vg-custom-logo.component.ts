@@ -1,6 +1,5 @@
-import {Component, ElementRef, Input, ViewEncapsulation, NgModule} from '@angular/core';
-import {VgAPI} from "videogular2/core";
-
+import {Component, ElementRef, Input, OnInit, ViewEncapsulation} from '@angular/core';
+import {VgAPI} from "videogular2/compiled/src/core/services/vg-api";
 
 @Component({
   selector: 'vg-custom-logo',
