@@ -9,13 +9,12 @@
  * MIT license
  */
 
-var VgCoreModule = require( 'videogular2/compiled/src/core/core');//';
-var VgAPI = require( 'videogular2/compiled/src/core/services/vg-api');//';
-
 /**
  * @fileoverview added by tsickle
  * @suppress {checkTypes} checked by tsc
  */
+var VgCoreModule = require( "videogular2/compiled/src/core/core');//");//";
+var VgAPI = require( "videogular2/compiled/src/core/services/vg-api');//");//";
 var VgCustomLogo = (function () {
     function VgCustomLogo(ref, API) {
         this.API = API;
