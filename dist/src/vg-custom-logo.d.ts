@@ -1,5 +1,5 @@
 import { OnInit, ElementRef } from '@angular/core';
-import { VgAPI } from "videogular2/core";
+import { VgAPI } from "videogular2/compiled/src/core/services/vg-api";
 export declare class VgCustomLogo implements OnInit {
     API: VgAPI;
     vgFor: string;
