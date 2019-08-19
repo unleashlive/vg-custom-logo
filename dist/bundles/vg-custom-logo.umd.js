@@ -1,13 +1,16 @@
 (function (global, factory) {
-	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/common'), require('videogular2/core'), require('@angular/forms')) :
-	typeof define === 'function' && define.amd ? define(['exports', '@angular/core', '@angular/common', 'videogular2/core', '@angular/forms'], factory) :
-	(factory((global.ng = global.ng || {}, global.ng.angularLibraryStarter = {}),global.ng.core,global.ng.common,global['videogular2/core'],global['@angular/forms']));
-}(this, (function (exports,core,common,core$1,forms) { 'use strict';
+	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/common'), require('@angular/forms')) :
+	typeof define === 'function' && define.amd ? define(['exports', '@angular/core', '@angular/common', '@angular/forms'], factory) :
+	(factory((global.ng = global.ng || {}, global.ng.angularLibraryStarter = {}),global.ng.core,global.ng.common,global['@angular/forms']));
+}(this, (function (exports,core,common,forms) { 'use strict';
 
 /**
  * @license vg-custom-logo
  * MIT license
  */
+
+var VgCoreModule = require( 'videogular2/compiled/src/core/core');//';
+var VgAPI = require( 'videogular2/compiled/src/core/services/vg-api');//';
 
 /**
  * @fileoverview added by tsickle
@@ -52,7 +55,7 @@ var VgCustomLogo = (function () {
     /** @nocollapse */
     VgCustomLogo.ctorParameters = function () { return [
         { type: core.ElementRef, },
-        { type: core$1.VgAPI, },
+        { type: VgAPI, },
     ]; };
     VgCustomLogo.propDecorators = {
         "vgFor": [{ type: core.Input },],
@@ -65,7 +68,7 @@ var VgCustomLogoModule = (function () {
     }
     VgCustomLogoModule.decorators = [
         { type: core.NgModule, args: [{
-                    imports: [core$1.VgCoreModule, forms.FormsModule, common.CommonModule],
+                    imports: [VgCoreModule, forms.FormsModule, common.CommonModule],
                     declarations: [VgCustomLogo],
                     exports: [VgCustomLogo]
                 },] },

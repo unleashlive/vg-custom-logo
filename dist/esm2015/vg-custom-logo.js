@@ -5,8 +5,9 @@
 
 import { Component, ElementRef, Input, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { VgAPI, VgCoreModule } from 'videogular2/core';
 import { FormsModule } from '@angular/forms';
+import { VgCoreModule } from 'videogular2/compiled/src/core/core';
+import { VgAPI } from 'videogular2/compiled/src/core/services/vg-api';
 
 /**
  * @fileoverview added by tsickle
