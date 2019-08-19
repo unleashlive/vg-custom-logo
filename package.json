@@ -2,9 +2,9 @@
     "name": "vg-custom-logo",
     "version": "7.0.1",
     "description": "Display custom logo in videogular2",
-    "main": "./bundles/vg-custom-logo.umd.js",
-    "module": "./esm5/vg-custom-logo.js",
-    "es2015": "./esm2015/vg-custom-logo.js",
+    "main": "./dist/bundles/vg-custom-logo.umd.js",
+    "module": "./dist/esm5/vg-custom-logo.js",
+    "es2015": "./dist/esm2015/vg-custom-logo.js",
     "scripts": {
         "build": "node build.js",
         "test": "karma start",
@@ -14,7 +14,7 @@
         "compodoc": "compodoc -p tsconfig.json",
         "compodoc-serve": "compodoc -s"
     },
-    "typings": "./vg-custom-logo.d.ts",
+    "typings": "./dist/vg-custom-logo.d.ts",
     "author": "Unleash live",
     "repository": {
         "type": "git",
