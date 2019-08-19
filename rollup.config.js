@@ -1,5 +1,6 @@
 import resolve from 'rollup-plugin-node-resolve';
 import sourcemaps from 'rollup-plugin-sourcemaps';
+import replace from 'rollup-plugin-replace';
 
 /**
  * Add here external dependencies that actually you use.
@@ -29,7 +30,13 @@ const globals = {
 
 export default {
     external: Object.keys(globals),
-    plugins: [resolve(), sourcemaps()],
+    plugins: [
+        replace({"import { VgAPI } from": "var VgAPI = require(" }),
+        replace({"vg-api": "vg-api');//"}),
+        replace({"import { VgCoreModule } from": "var VgCoreModule = require(" }),
+        replace({"core/core": "core/core');//"}),
+        resolve(),
+        sourcemaps()],
     onwarn: () => { return },
     output: {
         format: 'umd',
